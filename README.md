@@ -52,9 +52,20 @@ Identificação de padrões de compatibilidade entre perfil psicossocial do adot
 2. **Tempo Médio para Adoção:** Segmentado por raça, porte e idade.
 3. **Mapa de Calor:** Áreas com maior demanda de adoção vs. áreas com maior concentração de animais abandonados.
 
-
 ## Ideia Inicial de Dashboard
 O dashboard será focado em **Gestão de Impacto**, apresentando:
 - Indicadores de "Adoções de Longa Permanência" (animais idosos ou com deficiência).
 - Gráficos de funil: Visualizações -> Interesse -> Visita -> Adoção.
 - Ranking de compatibilidade média por região.
+
+## Execução e Link de visualização
+Visualização foi publicada e pode ser acessada em: [https://petmatch-v8857.streamlit.app/]
+
+## Tecnologias Utilizadas
+- **Linguagem:** Python
+- **Dashboard:** Streamlit & Plotly
+- **Banco de Dados:** PostgreSQL (Estrutura) & Firebase (Tempo Real)
+- **Hospedagem:** Streamlit Cloud
+
+## Resultados da Análise (Dashboard)
+Dashboard apresenta métricas de assertividade de match e tempo de permanência, permitindo aos gestores de ONGs, identificação acerca de tempo de adoção de perfis de animais e ajustes de estratégias de divulgação.
