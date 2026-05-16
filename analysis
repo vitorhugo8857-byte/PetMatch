@@ -1,1 +1,17 @@
+import pandas as pd
+from datetime import datetime
 
+# 1. Categorização por Score (lógica)
+def calcular_score_match(pet, adotante):
+    score = 0
+    if pet['nivel_energia'] == adotante['estilo_vida']: score += 40
+    if pet['espaco_req'] <= adotante['espaco_disponivel']: score += 60
+    return score
+
+# 2. Tratamento de Datas (Tempo de Permanência)
+df_pets['tempo_permanencia'] = (pd.to_datetime('today') - pd.to_datetime(df_pets['data_entrada'])).dt.days
+
+# 3. Padronização Geográfica
+# Através de geopy para conversão de endereços em coordenadas
+from geopy.distance import geodesic
+distancia = geodesic((lat_abrigo, lon_abrigo), (lat_adotante, lon_adotante)).km
